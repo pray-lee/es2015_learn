@@ -25,4 +25,13 @@ const obj2 = Object.freeze({
 })
 const obj3 = Object.deepFreeze(obj2)
 obj3.a.aa = 2
-// console.log(obj3) // it worked
+console.log(obj3) // it worked
+
+// for of and entries
+const arr = [1, 3, 5]
+function entry (obj) {
+  for(const [a, b] of obj.entries()){
+    console.log(a, b)
+  }
+}
+console.log(entry(arr))
