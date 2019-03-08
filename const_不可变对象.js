@@ -17,6 +17,7 @@ Object.deepFreeze = obj => {
     }
   })
   return Object.freeze(obj)
+  console.log(1)
 }
 const obj2 = Object.freeze({
   a: {

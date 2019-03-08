@@ -1,5 +1,3 @@
-import { promises } from "fs";
-
 // promise 处理异步代码
 // basic structure
 function asyncMethod () {
@@ -9,7 +7,7 @@ function asyncMethod () {
 }
 
 // promise 里面如果出现throw 语句，Promise对象便会直接进入失败状态，并以throw语句的抛出值作为错误值进行错误处理
-(new Promise(function () {
+(new promise(function () {
   throw new Error('something wrong!')
 })).catch(err => {
   console.error(err)
